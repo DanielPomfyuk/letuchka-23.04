@@ -1,6 +1,5 @@
-class Post < ApplicationRecord
+class Post < ActiveRecord::Base
     belongs_to :user
     has_many :post_comments
-
     validates :title, :body, presence: true
 end
